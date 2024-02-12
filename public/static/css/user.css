@@ -1,0 +1,69 @@
+.body {
+    background-color: #151B23;
+    padding: 0;
+    margin: 0;
+}
+
+div[class="modal-body row"] {
+    margin-top: 3vh;
+}
+
+.container-fluid {
+    background-color: #21272F;
+    border-radius: 3.5vh;
+    color: white;
+}
+
+div[class="container-fluid painel"] {
+    margin-top: 2%;
+    border: 5px solid #21272F;
+    width: 95%;
+}
+
+div[class="col-md-6 colum1"]{
+    width: 18%;
+}
+
+div[class="col-md-8 colum2"]{
+    width: 80%;
+}
+
+
+.painel img{
+    height: 25vh;
+    position: relative;
+}
+
+div[class="col-sm"] {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    height: 5%;
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+
+#second-container {
+    width: 95%;
+    margin-top: 20px;
+}
+
+#sub-second-container{
+    margin-bottom: 20vh;
+}
+
+.feed img {
+    height: auto;
+    width: 20px;
+}
+
+#block1 {
+    margin-top: 30px;
+}
+
+#feed {
+    padding-bottom: 80px;
+}
