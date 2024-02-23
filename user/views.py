@@ -18,5 +18,6 @@ def find_user_by_username(request):
         return render(request, 'index.html', {'username:': None}, status=404)         
 
     
-    
+def auth(request):
+    return render(request, 'login.html')
     
