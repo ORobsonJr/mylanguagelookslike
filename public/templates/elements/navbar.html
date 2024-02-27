@@ -20,108 +20,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Feed</a>
+            <a class="nav-link" href="/feed">Feed</a>
           </li>
         </ul>
       
 
-        <button type="button"  class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#signin">Log in</button>
-        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signup">Sign up</button>
-        
-        
-        
+        <button type="button"  class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#signin" onclick="window.location.href = '/login';">Log in</button>
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signup" onclick="window.location.href = '/login';">Sign up</button>
       </div>
     </div>
-
   </nav>
-
-  <!-- Sign in / login page -->
-
-  <div class="modal " id="signin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <img src="https://cdn-icons-png.flaticon.com/512/3940/3940410.png" href="#" height="65vh" width="65vh">
-          <br>
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login | languagelookslike</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-          <form method="post">
-            {% csrf_token %}
-            <div class="mb-3">            
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="InputEmailSignIn" aria-describedby="emailHelp">
-              <div id="emailHelpSignIn" aria-autocomplete="inline" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputSenha1" class="form-label">Senha</label>
-              <input type="password" autocomplete="current-password" class="form-control" id="exampleInputSenha1">
-            </div>
-
-            <a href="#reset-password">Esqueceu senha?</a>
-            <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Sign up / sign up page -->
-
-  <div class="modal " id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <img src="https://cdn-icons-png.flaticon.com/512/3940/3940410.png" href="#" height="65vh" width="65vh">
-          <br>
-          <h1 class="modal-title fs-5" id="staticBackdropLabel"> Registro | languagelookslike</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-         
-          <form method="post">
-            {% csrf_token %}
-            <div class="mb-3">            
-              <label for="exampleInputEmail1" class="form-label">Nome completo</label>
-              <input type="text" class="form-control" id="fullname" aria-describedby="fullnameHelp">
-              <div id="fullnameHelp" aria-autocomplete="inline" class="form-text"></div>
-            </div>
-
-            <div class="mb-3">            
-              <label for="exampleInputEmail1" class="form-label">Nome de usuário</label>
-              <input type="text" class="form-control" id="username" aria-describedby="fullnameHelp">
-              <div id="fullnameHelp" aria-autocomplete="inline" class="form-text"></div>
-            </div>
-
-            <div class="mb-3">            
-              <label for="exampleInputEmail1" class="form-label">Endereço e-mail</label>
-              <input type="email" class="form-control" id="InputEmailSignUp" aria-describedby="emailHelp">
-              <div id="emailHelpSignUp" aria-autocomplete="inline" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-
-            <div class="mb-3">
-              <label for="exampleInputSenha1" class="form-label">Senha</label>
-              <input type="password" autocomplete="current-password" class="form-control" id="PasswordSignUp">
-            </div>
-
-            <a href="#reset-password">Esqueceu senha?</a>
-            <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <div id="gap_between_navbar"></div>
 
